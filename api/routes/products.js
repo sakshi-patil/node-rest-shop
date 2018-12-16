@@ -50,7 +50,7 @@ router.post('/', (req, res, next) => {
         .then(result => {
             console.log(result);
             res.status(200).json({
-                message: 'Handling POST request to /products',
+                message: "created product successfully",
                 createdProduct: {
                     name: result.name,
                     price: result.price,
