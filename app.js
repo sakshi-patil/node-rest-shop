@@ -4,6 +4,11 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require("mongoose");
 
+// npm dotenv config
+require('dotenv').config();
+
+console.log("testing",process.env.TEST);
+
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 const userRoutes = require('./api/routes/user');
